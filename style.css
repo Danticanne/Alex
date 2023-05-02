@@ -1,0 +1,58 @@
+body{
+
+    overflow:hidden;
+}
+#img{
+    opacity: 0;
+    animation: spin 3s infinite;
+}
+#emoji{
+    opacity: 0;
+    animation: gros 3s infinite;
+}
+#title{
+    animation: rainbowtct 4s infinite;
+    font-size: 60px;
+    opacity: 0;
+}
+@keyframes rainbow {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: green;
+    }
+}
+@keyframes rainbowtct {
+    0%{
+        color: blue;
+    }
+    50%{
+        color: red;
+    }
+    100%{
+        color: green;
+    }
+}
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes gros {
+   0%{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(0.5);
+    }
+}
